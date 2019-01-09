@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BiometricPromptSample</string>
+    <string name="auth">Authenticate with fingerprint</string>
+</resources>
