@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onAuthenticationSucceeded(@NonNull BiometricPrompt.AuthenticationResult result) {
                 super.onAuthenticationSucceeded(result);
-                Log.d(TAG, "Fingerprint recogonised successfully");
+                Log.d(TAG, "Fingerprint recognised successfully");
             }
 
             @Override
@@ -45,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
                 super.onAuthenticationFailed();
                 Log.d(TAG, "Fingerprint not recognised");
             }
+
+
         });
 
         final BiometricPrompt.PromptInfo promptInfo = new BiometricPrompt.PromptInfo.Builder()
